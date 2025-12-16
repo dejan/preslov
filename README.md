@@ -100,10 +100,13 @@ bun repl
 bunx prettier --check "src/**/*.ts" --write
 ```
 
-### Pakovanje
+### Pakovanje i objava
 
 ```bash
 bun run build
+
+npm login
+bun publish
 ```
 
 ## Licenca
