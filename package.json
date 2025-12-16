@@ -1,0 +1,45 @@
+{
+  "name": "preslov",
+  "version": "1.0.0",
+  "description": "Transliteration from Cyrillic to Latin and ASCII Latin for Serbian language",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --sourcemap=external && bun run build:types",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap",
+    "test": "bun test",
+    "dev": "bun run src/index.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "transliteration",
+    "cyrillic",
+    "latin",
+    "serbian",
+    "serbian-language",
+    "latinica",
+    "cirilica"
+  ],
+  "author": "Dejan Simic <desimic@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dejan/preslovljavanje.git"
+  },
+  "homepage": "https://github.com/dejan/preslovljavanje",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
