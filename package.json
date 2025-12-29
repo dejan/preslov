@@ -16,7 +16,6 @@
     "build": "bun build src/index.ts --outdir dist --target node --sourcemap=external && bun run build:types",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap",
     "test": "bun test",
-    "dev": "bun run src/index.ts",
     "prepublishOnly": "bun run build"
   },
   "keywords": [
@@ -32,9 +31,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dejan/preslovljavanje.git"
+    "url": "https://github.com/dejan/preslov.git"
   },
-  "homepage": "https://github.com/dejan/preslovljavanje",
+  "homepage": "https://github.com/dejan/preslov",
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.3.3"
