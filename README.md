@@ -89,7 +89,7 @@ bun repl
 ```
 
 ```typescript
-> import { translit, alphabet } from "./src/preslov";
+> import { translit } from "./src/preslov";
 > translit("Његош", { to: "latin" })
 'Njegoš'
 ```
